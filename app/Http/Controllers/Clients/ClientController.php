@@ -15,7 +15,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        return view('clients.client_home');
     }
 
     /**
@@ -25,7 +25,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('budgets.budget_create');
     }
 
     /**
@@ -47,7 +47,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-        //
+        return view('budgets.budget_edit');
     }
 
     /**

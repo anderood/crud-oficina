@@ -18,21 +18,21 @@ class BudgetController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        //
+        return view('budgets.budget_home');
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function create()
     {
-        //
+        return view('budgets.budget_create');
     }
 
     /**
@@ -50,11 +50,11 @@ class BudgetController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Budgets\Budget  $budget
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function show(Budget $budget)
     {
-        //
+        return view('budgets.budget_edit');
     }
 
     /**

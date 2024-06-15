@@ -15,7 +15,7 @@ class SellerController extends Controller
      */
     public function index()
     {
-        //
+        return view('sellers.seller_home');
     }
 
     /**
@@ -25,7 +25,7 @@ class SellerController extends Controller
      */
     public function create()
     {
-        //
+        return view('sellers.seller_create');
     }
 
     /**
@@ -47,7 +47,7 @@ class SellerController extends Controller
      */
     public function show(Seller $seller)
     {
-        //
+        return view('clients.client_edit');
     }
 
     /**
